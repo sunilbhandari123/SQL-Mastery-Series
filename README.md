@@ -59,7 +59,7 @@ Counts students in each department
 Shows only departments with more than 30 students
 
 
-# | WHERE                          | HAVING                   |
+| WHERE                          | HAVING                 |
 | ------------------------------ | ------------------------ |
 | Filters rows                   | Filters groups           |
 | Used before GROUP BY           | Used after GROUP BY      |
