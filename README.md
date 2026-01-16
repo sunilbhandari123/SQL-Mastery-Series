@@ -10,7 +10,6 @@ SELECT * from table;
 Used to retrive all column for the respective table
 
 why to avoid select * in the projects?
-Why avoid SELECT *?
 ➡ Performance
 ➡ Memory
 ➡ Readability
@@ -45,6 +44,43 @@ Example 1:- query to returns the number of students in each department by groupi
 SELECT department, COUNT(*) AS total_students
 FROM students
 GROUP BY department;
+
+# v) SELECT Statement with HAVING Clause
+The HAVING clause is used to filter results after applying GROUP BY.
+
+Select department, count (*) as total_students
+From students 
+group by department
+having count (*) > 30;
+
+Explanation of above example:-
+Groups students by department
+Counts students in each department
+Shows only departments with more than 30 students
+
+
+# | WHERE                          | HAVING                   |
+| ------------------------------ | ------------------------ |
+| Filters rows                   | Filters groups           |
+| Used before GROUP BY           | Used after GROUP BY      |
+| Cannot use aggregate functions | Uses aggregate functions |
+
+
+
+
+# Execution Order
+FROM
+WHERE
+GROUP BY
+HAVING
+SELECT
+ORDER BY
+LIMIT
+
+
+
+
+
 
 
 
