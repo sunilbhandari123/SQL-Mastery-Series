@@ -66,6 +66,30 @@ Shows only departments with more than 30 students
 | Cannot use aggregate functions | Uses aggregate functions |
 
 
+# vi)  SELECT Statement with ORDER BY clause
+ORDER BY is used to sort the result set of a query.
+
+📌 Sorting happens after data is selected
+📌 Default sorting order is ASC (ascending)
+
+Example 1:- Students sorted by city and marks
+select * from students
+order by city asc, marks desc;
+
+
+Example 2:- Departments with highest number of students
+select department , count(*) as total
+from student
+group by department
+order by total dsc;
+
+# vi)  SELECT Statement with Limit
+LIMIT is used to restrict the number of rows returned by a query.
+Example:-
+SELECT *
+FROM students
+LIMIT 5;
+
 
 
 # Execution Order
